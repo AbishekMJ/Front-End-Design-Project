@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Featured Speakers</title>
+  <link rel="stylesheet" href="front.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  
+  
+
+</head>
+<body>
+
+  <div class="container">
+    <h1>View our Featured Speakers for the Event</h1>
+
+ <p>Speakers are core contributors and industry thought leaders working at <span style="color: blue;">companies</span> that push for innovation.</p>
+<br>
+<br>
+    
+    <div id="info-box" class="info-box">
+      <span class="close" onclick="closeDetails()">&times;</span>
+      <div id="speaker-details">
+
+        <p>Select a speaker to view details here.</p>
+      </div>
+    </div>
+
+  
+    <div class="speakers">
+      <button class="scroll-btn left" onclick="scrollLeft()" style="
+      position: absolute;
+      top: 50%;
+      left: 10px;
+      transform: translateY(-50%);
+      width: 40px;
+      height: 40px;
+      background-color: white;
+      border: 2px solid #333;
+      border-radius: 50%;
+      font-size: 22px;
+      color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    ">
+      &lt;
+    </button>
+      <div class="speaker-card" onclick="showDetails('speaker1')">
+        <img src="https://th.bing.com/th/id/OIP.ANEJ90pv23_-eng2e1RD6QHaHa?rs=1&pid=ImgDetMain" alt="John Doe">
+        <h3>John Doe</h3>
+        <p><strong>Chief Marketing Officer</strong> <br> Acme Corp </p>
+       </div>
+
+      <div class="speaker-card" onclick="showDetails('speaker2')">
+        <img src="https://th.bing.com/th/id/R.86976160f0aba9097feb2f24ab118202?rik=j3N8nF1iM%2fwa4w&riu=http%3a%2f%2fwww.thefamouspeople.com%2fprofiles%2fimages%2ftim-berners-lee-2.jpg&ehk=603UnibyJ0PjFvTPel2Qh6F9NOry8xoz5Cn%2b1eqjw4w%3d&risl=&pid=ImgRaw&r=0" alt="John Doe">
+        <h3>Berners Lee</h3>
+        <p><strong>Chief Engagement Officer</strong> <br> Acme Corp </p>
+      </div>
+
+      <div class="speaker-card" onclick="showDetails('speaker3')">
+        <img src="https://thedeveloperstory.com/wp-content/uploads/2021/07/The-Greatest-Programmers-2-1024x724.png" alt="John Doe">
+        <h3>Torvaldus</h3>
+        <p><strong> Technical Developer</strong><br>Pantheon</p>
+      </div>
+
+      <div class="speaker-card" onclick="showDetails('speaker4')">
+        <img src="https://www.kcl.ac.uk/newimages/ah/digital-humanities/people/TannerSimon2.xff41ce23.jpg?w=540&h=540&f=webp" alt="John Doe">
+        <h3>John Doe</h3>
+        <p><strong> Marketing Officer</strong><br>Specbee</p>
+      </div>
+      
+    
+  <button class="scroll-btn right" onclick="scrollRight()" style="
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  background-color:white;
+  border: 2px solid #333;
+  border-radius: 50%;
+  font-size: 22px;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+">
+  &gt;
+</button>
+    </div>
+
+<br>
+<br>
+    <button class="see-program">See the Program</button>
+  </div>
+
+  <script src="front.js"></script>
+</body>
+</html>
